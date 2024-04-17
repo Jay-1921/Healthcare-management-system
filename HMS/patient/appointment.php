@@ -39,7 +39,7 @@
 						$sym = $_POST['sym'];
 						if(empty($sym)){
 						}else{
-							$query = "INSERT INTO appointment(firstname, surname, gender, phone, appointment_date, symptoms, status, date_booked)  VALUES('$firstname', '$surname', '$gender', '$phone', '$date', '$sym', 'Pending', NOW())";
+							$query = "INSERT INTO appointment(firstname, surname, gender, phone, appointment_date, symptoms, status, date_booked, action)  VALUES('$firstname', '$surname', '$gender', '$phone', '$date', '$sym', 'Pending', NOW(), 1)";
             				$res = mysqli_query($connect,$query);
 							if($res){
 								echo "<script>alert('You have booked an appointment.')</script>";
