@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>HMS Home Page</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Global styles */
         body {
@@ -12,9 +12,16 @@
             color: #333;
             margin: 0;
             padding: 0;
+            background-image: url(image/b7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         /* Navbar styles */
+        .custom-navbar {
+              background-color: #00008B;
+            }
+
         .navbar-info {
             background-color: #17a2b8;
             padding: 20px 0;
@@ -80,50 +87,11 @@
     ?>
 
     <div style="margin-top: 20px;">
-        
+        <h1 class="text-right-center" style="font-family:Arial, sans-serif; text-align: right; padding-right: 20px; margin-top:200px ; font-weight: bold;" >Hridaya Healthcare</h1>
+      <p class="text-right-center" style="font-family: Arial, sans-serif; text-align: right; padding-right: 20px;margin-top: 50px; font-size: 35px; font-weight: italic;">Your Trusted Partner on the Path to Better Health:<br> Offering Compassionate Guidance, Advanced Treatments,and <br>a Personalized Approach to Supporting Your Health and Happiness</p>
+
     </div>
-    <div class="container">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-3 mx-1 shadow">
-                    <img src="image/more info.jpeg" style="width: 10px,height: 10px;">
+    
 
-                    <h5 class="text-center">Click here for more info </h5>
-
-                    <a href="aboutus.php">
-                        <button class="btn btn-success my-3" style="margin-left: 30%;">More Info</button>
-
-                </div>
-                <div class="col-md-3 mx-1 shadow">
-                    <img src="image/patient.jpeg" style="width: 100%;">
-
-                    <h5 class="text-center">Create account so we can take care of you </h5>
-
-                    <a href="account.php">
-                        <button class="btn btn-success my-3" style="margin-left: 30%;">Create Account</button>
-
-                </div>
-                <div class="col-md-3 mx-1 shadow">
-                    <img src="image/doctor.jpeg" style="width: 100%;">
-
-                    <h5 class="text-center">We are employing Doctors </h5>
-
-                    <a href="apply.php">
-                        <button class="btn btn-success my-3" style="margin-left: 30%;">Apply Now!!</button>
-
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-<footer> <p class="text-center" style="margin-bottom: 100%;">
-    This project is created by 
-                        1) Jay
-                        2) Heer
-                        3) Stuti
-                        4) Snehal
-                    </p>
-</footer>
 </body>
 </html>
