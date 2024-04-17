@@ -36,7 +36,6 @@
                         // Check if row is fetched successfully
                         if($res && mysqli_num_rows($res) > 0) {
                             $row = mysqli_fetch_array($res);
-
                         }
                     }
                 ?>
@@ -93,11 +92,14 @@
                                     }
                                     else
                                     {
+                                        if (isset($_SESSION['doctor'])) {
+                                            
+                                        
                                         $doc = $_SESSION['doctor'];
                                         $fname = $row['firstname'];
-                                        $query = "INSERT INTO  income(doctor,patient,date_discharge,amount_paid,description) VALUES('$doc','$fname',NOW(),'$fee','$des')";
+                                        $query = "INSERT INTO  income(doctor,patient,date_discharge,amount_paid,prescription) VALUES('$doc','$fname',NOW(),'$fee','$des')";
                                         $res = mysqli_query($connect,$query);
-                                        
+                                        }
                                         if($res)
                                         {
                                         echo "<script>alert('You have sent Invoice')</script>";
@@ -111,8 +113,8 @@
                             <form method="post">
                                 <label>Fee</label>
                                 <input type="number" name="fee" class="form-control" autocomplete="off" placeholder="Enter patient fee">
-                                <label>Description</label>
-                                <input type="text" name="des" class="form-control" autocomplete="off" placeholder="Enter Description">
+                                <label>prescription</label>
+                                <input type="text" name="des" class="form-control" autocomplete="off" placeholder="Enter prescription">
                                 <input type="submit" name="send" class="btn btn-info my-2" value="send">
                             </form>
                             
